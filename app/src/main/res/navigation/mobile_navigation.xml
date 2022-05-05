@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.aplicaciontarea.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.aplicaciontarea.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/operacionFragment"
+        android:name="com.example.aplicaciontarea.operacionFragment"
+        android:label="fragment_operacion"
+        tools:layout="@layout/fragment_operacion" />
+    <fragment
+        android:id="@+id/comienzoFragment"
+        android:name="com.example.aplicaciontarea.comienzoFragment"
+        android:label="fragment_comienzo"
+        tools:layout="@layout/fragment_comienzo" />
+    <fragment
+        android:id="@+id/entrenamientoFragment"
+        android:name="com.example.aplicaciontarea.entrenamientoFragment"
+        android:label="fragment_entrenamiento"
+        tools:layout="@layout/fragment_entrenamiento" />
+    <fragment
+        android:id="@+id/buscareFragment"
+        android:name="com.example.aplicaciontarea.buscareFragment"
+        android:label="fragment_buscare"
+        tools:layout="@layout/fragment_buscare" />
+    <fragment
+        android:id="@+id/cronometroFragment"
+        android:name="com.example.aplicaciontarea.CronometroFragment"
+        android:label="fragment_cronometro"
+        tools:layout="@layout/fragment_cronometro" />
+</navigation>

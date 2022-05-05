@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:autoTransition="animateToStart"
+        motion:motionInterpolator="cubic(0.2,0.2,0.14,0.76)">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imageView4" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/textView5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="388dp"
+            android:layout_height="60dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.906"
+            motion:layout_constraintHorizontal_bias="0.478"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:transitionEasing="accelerate" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            motion:layout_constraintVertical_bias="0.13"
+            android:layout_height="147dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.132"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="142dp"
+            android:id="@+id/imageView4" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.136"
+            android:layout_height="176dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="230dp"
+            android:id="@+id/textView3" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.499"
+            android:layout_height="116dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.944"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="123dp"
+            android:id="@+id/imageView5" />
+        <Constraint
+            motion:layout_constraintVertical_bias="0.528"
+            android:layout_height="120dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.073"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="261dp"
+            android:id="@+id/textView5" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:autoTransition="jumpToStart" />
+    <ConstraintSet
+        android:id="@+id/Enter id"
+        motion:deriveConstraintsFrom="@+id/start" />
+</MotionScene>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_comienzo_scene"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="413dp"
+        android:layout_height="730dp"
+        android:background="@color/purplemila"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="730dp"
+            android:background="@color/purplemila"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Introduccion a los Aerobicos"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Consiste en una variedad de ejercicios que estimulan la actividad cardiaca y pulmonar por un tiempo lo suficientemente largo, en la búsqueda de cambios en el organismo.
+"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para empezar debes conocer algunos pasos basicos"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/btnvideo"
+                android:layout_width="216dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/red"
+                android:scaleType="fitCenter"
+                android:src="@drawable/youtube" />
+
+            <TextView
+                android:id="@+id/id4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O puedes leer la siguiente informacion"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/btngoogle"
+                android:layout_width="208dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/buscar" />
+
+            <TextView
+                android:id="@+id/id5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se puede hacer ejercicio no solo para bajar nuestro peso sino tambien para tener una buena salud; hacer ejercicios tambien involucra tener una buena alimentacion"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/id6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para tener una buena alimentacion no es necesario hacer dietas solo comer balanceadamente"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/id7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Por ello debemos conocer nuestro requerimiento calorico"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/id8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En el siguiente enlace se da a conocer la formula para obtener el requerimiento calorico"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/btnlink"
+                android:layout_width="208dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/celeste"
+                android:scaleType="fitCenter"
+                android:src="@drawable/link" />
+
+            <TextView
+                android:id="@+id/id9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicacion cuenta con una calculadora que te puede ayudar, espero que te guste usarla y cuentanos tu experiencia usando nuestra app en nuestra pagina de facebook"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/btnfacebook"
+                android:layout_width="208dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue"
+                android:scaleType="fitCenter"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/id10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicacion cuenta con una calculadora que te puede ayudar, espero que te guste usarla y cuentanos tu experiencia usando nuestra app en nuestra pagina de facebook"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>
